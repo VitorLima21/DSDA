@@ -1,11 +1,14 @@
 import React from "react";
+import EventosFormCadastrar from "../componentes/EventosFormCadastrar";
 
 const CadastrarEvento = () => {
   return (
     <div className="container mt-4">
-      <h2 className="text-center">Cadastrar Evento</h2>
-      <p>Conteúdo da página cadastrar de evento.</p>
+      <h2 className="text-center">Cadastre seu evento</h2>
+      <p className="text-center">Informe as características do seu evento e cadastre-o!</p>
+      <EventosFormCadastrar/>
     </div>
+    
   );
 }
 
