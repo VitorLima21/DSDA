@@ -1,12 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; 
+import ProfessorFormCadastrar from "../componentes/ProfessorFormCadastrar";
 
-const CadastrarProfessor = () => {
-  return (
-    <div className="container mt-4">
-      <h2 className="text-center">Cadastrar Professor</h2>
-      <p>Conteúdo da página cadastrar de professor.</p>
-    </div>
-  );
+
+const API_URL = "http://localhost:3000/professores";
+
+const CadastrarProfessores = () => {
+    
+    return(
+        <div className="container mt-4 d-flex flex-column align-items-center">
+            <h2 className="text-center mb-1">Cadastrar Professores</h2>
+            <ProfessorFormCadastrar/>
+        </div>
+    )
 }
 
-export default CadastrarProfessor;
+export default CadastrarProfessores;

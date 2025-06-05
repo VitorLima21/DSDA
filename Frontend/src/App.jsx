@@ -294,7 +294,7 @@ const App = () => {
         {/* Disciplinas Lecionadas */}
         <Route path="/disciplinas-lecionadas" element={<ListarDisciplinaLecionada />} />
         <Route path="/disciplinas-lecionadas/cadastrar" element={<CadastrarDisciplinaLecionada />} />
-        <Route path="/disciplinas-lecionadas/editar/:id" element={<EditarDisciplinaLecionada />} />
+        <Route path="/professores/disciplinas/editar/:id" element={<EditarDisciplinaLecionada />} />
 
         {/* Turmas */}
         <Route path="/turmas" element={<ListarTurma />} />

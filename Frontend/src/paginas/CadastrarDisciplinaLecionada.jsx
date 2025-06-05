@@ -1,12 +1,16 @@
 import React from "react";
 
-const CadastrarDisciplinaLecionada = () => {
-  return (
-    <div className="container mt-4">
-      <h2 className="text-center">Cadastrar DisciplinaLecionada</h2>
-      <p>Conteúdo da página cadastrar de disciplinalecionada.</p>
-    </div>
-  );
-}
+import DisciplinaLecionadaFormCadastrar from "../componentes/DisciplinaLecionadaFormCadastrar";
 
+const API_URL = "http://localhost:3000/professores/disciplinas";
+
+const CadastrarDisciplinaLecionada = () => {
+    
+    return(
+        <div>
+            <h2 className="text-center mt-4">Cadastrar Disciplina Lecionada</h2>
+            <DisciplinaLecionadaFormCadastrar/>
+        </div>
+    )
+}
 export default CadastrarDisciplinaLecionada;
