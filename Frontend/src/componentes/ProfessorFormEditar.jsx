@@ -35,7 +35,7 @@ const ProfessorFormEditar = ({ aoEnviar, dadosIniciais }) => {
                 />
                 <input
                     className="form-control mb-3"
-                    type="text"
+                    type="email"
                     value={email}
                     placeholder="E-mail"
                     required

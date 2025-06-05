@@ -31,10 +31,10 @@ const ProfessorFormCadastrar = () => {
 
             
         <form  onSubmit={enviar} action="">
-            <input className="form-control mb-3" style={{maxWidth:"400px"}} type="text" value={nome} placeholder="Escreva o nome" required onChange={(e) => setNome(e.target.value)} />
-            <input className="form-control mb-3" style={{maxWidth:"400px"}} type="text" value={email} placeholder="Email" required onChange={(e) => setEmail(e.target.value)} />
-            <input className="form-control mb-3" style={{maxWidth:"400px"}} type="text" value={telefone} placeholder="Telefone" required onChange={(e) => setTelefone(e.target.value)} />
-            <input className="form-control mb-3" style={{maxWidth:"400px"}} type="text" value={especialidade} placeholder="Especialidade" required onChange={(e) => setEspecialidade(e.target.value)} />
+            <input className="form-control mb-3" style={{maxWidth:"700px"}} type="text" value={nome} placeholder="Escreva o nome" required onChange={(e) => setNome(e.target.value)} />
+            <input className="form-control mb-3" style={{maxWidth:"700px"}} type="email" value={email} placeholder="Email" required onChange={(e) => setEmail(e.target.value)} />
+            <input className="form-control mb-3" style={{maxWidth:"700px"}} type="text" value={telefone} placeholder="Telefone" required onChange={(e) => setTelefone(e.target.value)} />
+            <input className="form-control mb-3" style={{maxWidth:"700px"}} type="text" value={especialidade} placeholder="Especialidade" required onChange={(e) => setEspecialidade(e.target.value)} />
         <div className="container d-flex flex-column align-items-center">
 
             <button className="btn btn-primary" type="submit">SALVAR</button>

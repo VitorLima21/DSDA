@@ -100,6 +100,15 @@ import EditarLivro from "./paginas/EditarLivro";
 import ListarEmprestimo from "./paginas/ListarEmprestimo";
 import CadastrarEmprestimo from "./paginas/CadastrarEmprestimo";
 import EditarEmprestimo from "./paginas/EditarEmprestimo";
+
+// Usuarios
+import ListarUsuarios from "./paginas/Usuarios/ListarUsuarios";
+import CadastrarUsuarios from "./paginas/Usuarios/CadastrarUsuarios";
+import EditarUsuarios from "./paginas/Usuarios/EditarUsuarios";
+import EditarUsuario from "./paginas/Usuarios/EditarUsuarios";
+
+
+
 const App = () => {
   const location = useLocation()
   const navegar = useNavigate();
@@ -254,6 +263,17 @@ const App = () => {
   </ul>
 </li>
 
+{/* Usuários */}
+<li className="nav-item dropdown">
+  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+    Usuários
+  </a>
+  <ul className="dropdown-menu">
+    <li><Link className="dropdown-item" to="/usuarios">Listar Usuários</Link></li>
+    <li><Link className="dropdown-item" to="/usuarios/cadastrar">Cadastrar Usuário</Link></li>
+ </ul>
+</li>
+
 </ul>
 
               <button onClick={sair} type="button" class="btn btn-outline-danger">Sair </button>
@@ -365,6 +385,11 @@ const App = () => {
         <Route path="/emprestimos-livros" element={<ListarEmprestimo />} />
         <Route path="/emprestimos-livros/cadastrar" element={<CadastrarEmprestimo />} />
         <Route path="/emprestimos-livros/editar/:id" element={<EditarEmprestimo />} />
+
+         {/* Usuário */}
+        <Route path="/usuarios" element={<ListarUsuarios />} />
+        <Route path="/usuarios/cadastrar" element={<CadastrarUsuarios />} />
+        <Route path="/usuarios/editar/:id" element={<EditarUsuario />} />
       </Routes>
 
     </>

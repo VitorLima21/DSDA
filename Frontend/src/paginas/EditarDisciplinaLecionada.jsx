@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import DisciplinaLecionadaFormEditar from "../componentes/DisciplinaLecionadaFormEditar";
 
-const API_URL = "http://localhost:3000/disciplinas";
+const API_URL = "http://localhost:3000/disciplina_lecionada";
 
 const EditarDisciplinaLecionada = () => {
     const navegar = useNavigate();

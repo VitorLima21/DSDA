@@ -18,7 +18,7 @@ const UsuarioFormEditar = ({ aoEnviar, dadosIniciais }) => {
         aoEnviar({ email, senha });
     };
 
-    if (carregando) return <p>Carregando dados do usuário...</p>;
+    // if (carregando) return <p>Carregando dados do usuário...</p>;
 
     return (
         <div className="container mt-4 d-flex flex-column align-items-center">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3000/disciplinas";
+const API_URL = "http://localhost:3000/disciplina_lecionada";
 
 const ListarDisciplinaLecionada = () => {
     const [disciplinas, setDisciplinas] = useState([]);
@@ -47,13 +47,13 @@ const ListarDisciplinaLecionada = () => {
 
                 <tbody>
                     {disciplinas.map((dados) => (
-                        <tr key={dados.id}>
-                            <td>{dados.id}</td>
+                        <tr key={dados.disciplina_lecionada_id}>
+                            <td>{dados.disciplina_lecionada_id}</td>
                             <td>{dados.professor_id}</td>
                             <td>{dados.disciplina_id}</td>
                             <td>{dados.turno}</td>
                             <td className="d-flex justify-content-center">
-    <Link to={`/professores/disciplinas/editar/${dados.id}`} className="btn btn-primary me-2">
+    <Link to={`/professores/disciplinas/editar/${dados.disciplina_lecionada_id}`} className="btn btn-primary me-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             className="bi bi-pencil me-2" viewBox="0 0 16 16">
             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 
@@ -72,7 +72,7 @@ const ListarDisciplinaLecionada = () => {
         Editar
     </Link>
 
-    <button onClick={() => deleteDisciplinas(dados.id)} className="btn btn-danger">
+    <button onClick={() => deleteDisciplinas(dados.disciplina_lecionada_id)} className="btn btn-danger">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             className="bi bi-trash3 me-2" viewBox="0 0 16 16">
             <path d="M6.5 1h3a.5.5 0 0 1 

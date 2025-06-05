@@ -2,7 +2,7 @@ import React from "react";
 
 import DisciplinaLecionadaFormCadastrar from "../componentes/DisciplinaLecionadaFormCadastrar";
 
-const API_URL = "http://localhost:3000/professores/disciplinas";
+const API_URL = "http://localhost:3000/professores/disciplina_lecionada";
 
 const CadastrarDisciplinaLecionada = () => {
     
